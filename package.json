@@ -1,0 +1,61 @@
+{
+  "name": "network_access_status",
+  "version": "2.0.0",
+  "description": "We can detect whether network(internet) accessible or not",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VenkateshChinthakindi11/Network-Access-Status.git"
+  },
+  "keywords": [
+    "Network",
+    "Internet",
+    "status",
+    "access",
+    "accessible",
+    "detect",
+    "find",
+    "electron",
+    "javascript",
+    "jquery",
+    "angular",
+    "angular",
+    "(2/4)",
+    "node",
+    "ionic",
+    "online",
+    "offline",
+    "check",
+    "net",
+    "git",
+    "npm",
+    "modules",
+    "module",
+    "library",
+    "libraries",
+    "true",
+    "false",
+    "events",
+    "image",
+    "icon",
+    "fevicon",
+    "pure",
+    "javascript",
+    "html",
+    "html",
+    "5",
+    "webworker",
+    "blob",
+    "file",
+    "reader"
+  ],
+  "author": "Venkatesh Chinthakindi <yash13032017@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VenkateshChinthakindi11/Network-Access-Status/issues"
+  },
+  "homepage": "https://github.com/VenkateshChinthakindi11/Network-Access-Status#readme"
+}
