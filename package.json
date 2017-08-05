@@ -1,6 +1,6 @@
 {
   "name": "network_access_status",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "We can detect whether network(internet) accessible or not",
   "main": "index.js",
   "scripts": {
@@ -53,7 +53,7 @@
     "reader"
   ],
   "author": "Venkatesh Chinthakindi <yash13032017@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/VenkateshChinthakindi11/Network-Access-Status/issues"
   },
