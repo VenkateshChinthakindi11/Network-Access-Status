@@ -8,20 +8,20 @@
 */
 module.exports=(function(){
     return{
-        startWorker: function() {
+        check: function() {
             var newEvent;
             var w;
             var status = null;
             if (typeof (Worker) !== "undefined") {
                 if (typeof (w) == "undefined") {
                     var blob = new Blob([
-                    `var networkaccessstatus=(function(){
+                    `var networkAccessStatus=(function(){
                         var i=0;
                         var interval=4000;
                         status=undefined;
                             return{
-                                startpro:function(){
-                                    setInterval(()=>{networkaccessstatus.callback()},interval);
+                                startPro:function(){
+                                    setInterval(()=>{networkAccessStatus.callback()},interval);
                                 },
                                 S4:function(){
                                     return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
@@ -34,7 +34,7 @@ module.exports=(function(){
                                             if(status!="true")
                                             {
                                                 status=true;
-                                                newEvent = new CustomEvent('networkstatusChanged', { detail:true});
+                                                newEvent = new CustomEvent('networkStatusChanged', { detail:true});
                                                 window.dispatchEvent(newEvent); 
                                             }                     
                                         };
@@ -42,16 +42,16 @@ module.exports=(function(){
                                             if(status!="false")
                                             {
                                                 status=false;
-                                                newEvent = new CustomEvent('networkstatusChanged', { detail: fasle });
+                                                newEvent = new CustomEvent('networkStatusChanged', { detail: fasle });
                                                 window.dispatchEvent(newEvent); 
                                             }
                                         };
                                         try{                                           
-                                            guid = (networkaccessstatus.S4() + networkaccessstatus.S4() + "-" + 
-                                            networkaccessstatus.S4() + "-4" + 
-                                            networkaccessstatus.S4().substr(0,3) + "-" + networkaccessstatus.S4()
-                                            + "-" + networkaccessstatus.S4() + 
-                                            networkaccessstatus.S4() + networkaccessstatus.S4()).toLowerCase();                                            
+                                            guid = (networkAccessStatus.S4() + networkAccessStatus.S4() + "-" + 
+                                            networkAccessStatus.S4() + "-4" + 
+                                            networkAccessStatus.S4().substr(0,3) + "-" + networkAccessStatus.S4()
+                                            + "-" + networkAccessStatus.S4() + 
+                                            networkAccessStatus.S4() + networkAccessStatus.S4()).toLowerCase();                                            
                                             this.img.src = "https://www.google.co.in/images/branding/product/ico/googleg_lodp.ico?ID="+guid;                    
                                         }
                                         catch(error){                                           
@@ -61,8 +61,8 @@ module.exports=(function(){
                                     }
                                 }
                             }
-                        })(networkaccessstatus||{})
-                        networkaccessstatus.startpro();
+                        })(networkAccessStatus||{})
+                        networkAccessStatus.startPro();
                         `]);
                     var blobURL = window.URL.createObjectURL(blob);                   
                     w = new Worker(blobURL);                    
