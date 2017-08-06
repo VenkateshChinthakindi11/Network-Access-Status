@@ -1,6 +1,6 @@
 {
   "name": "network_access_status",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "We can detect whether network(internet) accessible or not",
   "main": "index.js",
   "scripts": {
